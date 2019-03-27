@@ -33,9 +33,21 @@
   </url>
   
   <url>
+    <loc>https://zadchow.github.io/pufa-reanalysis/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://zadchow.github.io/page/</loc>
     <changefreq>daily</changefreq>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zadchow.github.io/s-values/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
