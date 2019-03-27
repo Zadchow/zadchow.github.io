@@ -1,0 +1,37 @@
+/* --- Code blocks --- */
+
+pre {
+  font-size: 16px;
+  line-height: 1.5em;
+  background-color: #FAFAFA;
+  border-left: 3px solid #444444;
+  overflow: auto;
+}
+pre code {
+  white-space: pre;
+}
+pre.highlight, .highlight > pre, td.code pre {
+  background-color: #FAFAFA;
+  border-left: 5px solid #444444;
+}
+code table, code table td, code table th, code table tbody, code table tr,
+td.gutter pre {
+  padding: 0;
+  border: none;
+  background-color: #fff;
+}
+.highlight > pre {
+  padding: 0;
+}
+.highlight > pre.highlight {
+  padding: 9.5px;
+}
+td.code pre {
+  border-width: 0 0 0 20px;
+  border-style: solid;
+  border-color: #999;
+  border-radius: 0;
+}
+td.gutter {
+  padding-top: 3px;
+}

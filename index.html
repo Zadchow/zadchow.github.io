@@ -1,72 +1,285 @@
----
-layout: page
-title:
-subtitle: 
-use-site-title: true
----
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+	<meta name="generator" content="Hugo 0.54.0" />
+    
 
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
-    </a>
+  <title>Less Likely | Separating Signals From Noise | Less Likely</title>
+  <meta property="og:title" content="Less Likely | Separating Signals From Noise" />
+  <meta name="twitter:title" content="Less Likely | Separating Signals From Noise" />
+  <meta name="description" content="Less Likely is a website that discusses statistical methods and their use/misuse in published scientific studies, and hosts several statistical tools to better improve scientific reporting.">
+  <meta property="og:description" content="Less Likely is a website that discusses statistical methods and their use/misuse in published scientific studies, and hosts several statistical tools to better improve scientific reporting.">
+  <meta name="twitter:description" content="Less Likely is a website that discusses statistical methods and their use/misuse in published scientific studies, and hosts several statistical tools to better improve scientific reporting."><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Less Likely",
+    
+    "url": "https://zadchow.github.io/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https://zadchow.github.io/"
+  
+  
+  
+  
+}
+</script>
 
-    <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
+<meta property="og:title" content="Less Likely | Separating Signals From Noise" />
+<meta property="og:description" content="Less Likely is a website that discusses statistical methods and their use/misuse in published scientific studies, and hosts several statistical tools to better improve scientific reporting.">
+<meta property="og:image" content="https://zadchow.github.io/images/HomeLogo.png" />
+<meta property="og:url" content="https://zadchow.github.io/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Less Likely" />
+  <meta name="twitter:title" content="Less Likely | Separating Signals From Noise" />
+  <meta name="twitter:description" content="Less Likely is a website that discusses statistical methods and their use/misuse in published scientific studies, and hosts several statistical tools to better improve scientific reporting.">
+  <meta name="twitter:image" content="https://zadchow.github.io/images/HomeLogo.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@dailyzad" />
+  <meta name="twitter:creator" content="@dailyzad" />
+  <link href='https://zadchow.github.io/images/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://zadchow.github.io/images/HomeLogo.png" />
+  <meta name="twitter:image" content="https://zadchow.github.io/images/HomeLogo.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@dailyzad" />
+  <meta name="twitter:creator" content="@dailyzad" />
+  <meta property="og:url" content="https://zadchow.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Less Likely" />
 
-    <div class="post-entry-container">
-      {% if post.image %}
-      <div class="post-image">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ post.image }}">
-        </a>
-      </div>
-      {% endif %}
-      <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
-      </div>
+  <link rel="alternate" href="https://zadchow.github.io/index.xml" type="application/rss+xml" title="Less Likely">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://zadchow.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" />
+  <link rel="stylesheet" href="https://zadchow.github.io/css/highlight.min.css" /><link rel="stylesheet" href="https://zadchow.github.io/css/codeblock.css" /><!DOCTYPE html>
+<meta content="" name="keywords">
+<title>Less Likely Less Likely is a website that discusses statistical methods and their use/misuse in published scientific studies, and hosts several statistical tools to better improve scientific reporting.</title>
+
+
+
+<meta property="og:image" content="https://lesslikely.com/images/HomeLogo.png"/>
+<meta property="og:image:secure_url" content="https://zadchow.github.io/images/HomeLogo.png"/>
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://zadchow.github.io/images/apple-touch-icon.png">
+<link rel="shortcut icon" href="https://zadchow.github.io/images/favicon.ico">
+
+
+
+<link rel="stylesheet" href="https://zadchow.github.io/css/katex.min.css" />
+<script src="https://zadchow.github.io/js/katex.min.js"></script>
+<script src="https://zadchow.github.io/js/auto-render.min.js"></script>
+
+
+</html>
+
+  </head>
+  <body>
+
+    <!DOCTYPE html>
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img class="navbar-logo" src="https://zadchow.github.io/images/HomeLogo.svg"/>
     </div>
 
-    {% if post.tags.size > 0 %}
-    <div class="blog-tags">
-      Tags:
-      {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
-      {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
-    </div>
-    {% endif %}
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Home" href="https://lesslikely.com/">Home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Archives" href="https://lesslikely.com/archives/">Archives</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent">Projects</a>
+              <div class="navlinks-children">
+                
+                  <a href="https://lesslikely.com/about/">About</a>
+                
+                  <a href="https://data.lesslikely.com/concurve">Concurve</a>
+                
+                  <a href="https://lesslikely.com/s-value-calculator/">S-Value Calculator</a>
+                
+              </div>
+            </li>
+          
+        
 
-   </article>
-  {% endfor %}
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+</html>
+
+    
+ 
+
+
+
+
+
+
+
+  <div class="intro-header"></div>
+
+
+
+    
+<div class="container">
+  <div class="col-md-11">
+  <div role="main" class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <center><h2 style="font-size:40px; font-family;">This sub website is specifically for hosting projects/books. Check out the main site by clicking anything on the menu or sidebar.</h2></center>
+        
+        <div class="posts-list">
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="col-md-1">
+    <div id="sidebar-style">
+<div class="sidebar">
+  <h3><a href="https://lesslikely.com/archives/">Archives (31)</a></h3>
+  <hr />
+  <h4><a href="https://lesslikely.com/archives/statistics/">Statistics (14)</a></h4>
+  
+  <hr />
+  <h4><a href="https://lesslikely.com/archives/medicine/">Medicine (9)</a></h4>
+  
+  <hr />
+  <h4><a href="https://lesslikely.com/archives/nutrition/">Nutrition (8)</a></h4>
+  
+</div>
 </div>
 
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+<br>
+
+<div id="sidebar-style">
+<div class="sidebar">
+  <h3><a href="https://lesslikely.com/about">About</a></h3>
+  <hr />
+  <h3><a href="https://lesslikely.com/projects/">Projects</a></h3>
+  <hr />
+  <h4><a href="https://data.lesslikely.com/concurve/">Concurve</a></h4>
+  <hr />
+  <h4><a href="https://lesslikely.com/s-value-calculator">S-Values</a></h4>
+</div>
+</div>
+
+<br>
+
+  </div>
+ </div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="https://www.facebook.com/lesslikelycom" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/zadchow" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/dailyzad" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="https://zadchow.github.io/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br>
+  </br>
+  <div id="footer-text">
+  <p>
+    Powered by <a href="https://gohugo.io/"><img class="hugo-logo" src="https://zadchow.github.io/images/hugo-logo.svg"/></a>
+  </p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://zadchow.github.io/js/main.js"></script>
+<script src="https://zadchow.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
+
