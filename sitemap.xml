@@ -1,65 +1,64 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://zadchow.github.io/post/</loc>
+    <loc>https://zadrafi.github.io/post/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://zadchow.github.io/about/</loc>
+    <loc>https://zadrafi.github.io/about/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://zadchow.github.io/archives/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://zadchow.github.io/archives/</loc>
+    <loc>https://zadrafi.github.io/archives/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://zadchow.github.io/</loc>
+    <loc>https://zadrafi.github.io/archives/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://zadchow.github.io/pufa-reanalysis/</loc>
+    <loc>https://zadrafi.github.io/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://zadchow.github.io/page/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://zadchow.github.io/s-values/</loc>
+    <loc>https://zadrafi.github.io/page/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://zadchow.github.io/series/</loc>
+    <loc>https://zadrafi.github.io/pufa-reanalysis/</loc>
     <changefreq>daily</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://zadchow.github.io/tags/</loc>
+    <loc>https://zadrafi.github.io/s-values/</loc>
     <changefreq>daily</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zadrafi.github.io/series/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zadrafi.github.io/tags/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   
 </urlset>

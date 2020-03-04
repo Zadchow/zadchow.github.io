@@ -1,40 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Less Likely</title>
-    <link>https://zadchow.github.io/page/</link>
+    <link>https://zadrafi.github.io/page/</link>
     <description>Recent content in Pages on Less Likely</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://zadchow.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zadrafi.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://zadchow.github.io/about/</link>
+      <link>https://zadrafi.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zadchow.github.io/about/</guid>
+      <guid>https://zadrafi.github.io/about/</guid>
       <description>This website is specifically for hosting tools, analyses, and possible books in the future. To visit the main website and read the articles there, click here.</description>
     </item>
     
     <item>
       <title>PUFA Reanalysis</title>
-      <link>https://zadchow.github.io/pufa-reanalysis/</link>
+      <link>https://zadrafi.github.io/pufa-reanalysis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zadchow.github.io/pufa-reanalysis/</guid>
+      <guid>https://zadrafi.github.io/pufa-reanalysis/</guid>
       <description>A list of resources all related to the PUFA Reanalysis project.
  The original published meta-analysis.   My blog post pointing out the error.  Reanalysis Data Reanalysis Script (‘R’)    Author’s response to criticism.</description>
     </item>
     
     <item>
       <title>S-value Calculator</title>
-      <link>https://zadchow.github.io/s-values/</link>
+      <link>https://zadrafi.github.io/s-values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zadchow.github.io/s-values/</guid>
-      <description>  </description>
+      <guid>https://zadrafi.github.io/s-values/</guid>
+      <description>   </description>
     </item>
     
   </channel>
